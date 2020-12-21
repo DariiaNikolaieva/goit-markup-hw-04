@@ -28,7 +28,6 @@ body {
   background-color: var(--main-bgc);
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
-  cursor: pointer;
 }
 ul {
   list-style: none;
@@ -225,22 +224,23 @@ img {
   margin-bottom: 30px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
+  border-radius: 4px;
 }
 
 .antenna::before {
-  background-image: url(../images/antenna.png);
+  background-image: url(../images/antenna.svg);
 }
 
 .clock::before {
-  background-image: url(../images/clock.png);
+  background-image: url(../images/clock.svg);
 }
 
 .diagram::before {
-  background-image: url(../images/diagram.png);
+  background-image: url(../images/diagram.svg);
 }
 
 .astronaut::before {
-  background-image: url(../images/astronaut.png);
+  background-image: url(../images/astronaut.svg);
 }
 
 .benefits-essence {
@@ -324,6 +324,16 @@ img {
   margin-bottom: 30px;
   text-align: center;
 }
+
+.clients-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding-top: 94px;
+}
+
 .footer {
   background-color: var(--accent-bgc);
   color: var(--bgc-accent-text-color);

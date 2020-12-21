@@ -134,6 +134,13 @@ img {
   background-color: var(--accent-bgc);
   text-align: center;
 }
+
+.hero-title-container {
+  width: 696px;
+  text-align: center;
+  margin: auto;
+}
+
 .hero-title {
   color: var(--bgc-accent-text-color);
   font-weight: 900;
@@ -430,6 +437,13 @@ img {
 .portfolio-item {
   margin-right: 30px;
   margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.portfolio-item:hover,
+.portfolio-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-item:nth-last-child(-n + 3) {

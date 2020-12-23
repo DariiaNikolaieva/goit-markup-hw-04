@@ -34,6 +34,7 @@ ul {
   margin: 0;
   padding: 0;
 }
+
 /*шапка*/
 header {
   background-color: var(--header-bgc);
@@ -120,13 +121,22 @@ img {
 .contacts-item:not(:last-child) {
   margin-right: 50px;
 }
-
-.contacts-item {
-  display: flex;
-  align-items: center;
-}
 .contacts-icon {
+  display: block;
+  max-width: 100%;
   margin-right: 10px;
+  height: 16px;
+  fill: currentColor;
+}
+
+.envelope {
+  width: 16px;
+  height: 12px;
+}
+
+.smartphone {
+  width: 16px;
+  height: 10px;
 }
 
 .contacts-link {
@@ -134,9 +144,11 @@ img {
   text-decoration: none;
   padding-bottom: 32px;
   padding-top: 32px;
+  display: flex;
+  align-items: center;
 }
-.contacts a:hover,
-.contacts a:focus {
+.contacts-link:hover,
+.contacts-link:focus {
   color: var(--accent-text-color);
 }
 /*баннер*/

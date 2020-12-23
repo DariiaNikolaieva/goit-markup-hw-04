@@ -257,19 +257,19 @@ img {
 }
 
 .antenna::before {
-  background-image: url(../images/antenna.svg);
+  background-image: url(../images/bgi/antenna.svg);
 }
 
 .clock::before {
-  background-image: url(../images/clock.svg);
+  background-image: url(../images/bgi/clock.svg);
 }
 
 .diagram::before {
-  background-image: url(../images/diagram.svg);
+  background-image: url(../images/bgi/diagram.svg);
 }
 
 .astronaut::before {
-  background-image: url(../images/astronaut.svg);
+  background-image: url(../images/bgi/astronaut.svg);
 }
 
 .benefits-essence {

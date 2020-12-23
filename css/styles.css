@@ -108,6 +108,7 @@ img {
 .site-nav a:focus {
   color: var(--accent-text-color);
 }
+
 .contacts {
   font-weight: 500;
   font-size: 14px;
@@ -119,6 +120,15 @@ img {
 .contacts-item:not(:last-child) {
   margin-right: 50px;
 }
+
+.contacts-item {
+  display: flex;
+  align-items: center;
+}
+.contacts-icon {
+  margin-right: 10px;
+}
+
 .contacts-link {
   color: var(--secondary-text-color);
   text-decoration: none;

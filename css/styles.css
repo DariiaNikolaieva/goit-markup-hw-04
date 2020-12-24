@@ -34,7 +34,6 @@ ul {
   margin: 0;
   padding: 0;
 }
-
 /*шапка*/
 header {
   background-color: var(--header-bgc);
@@ -109,7 +108,6 @@ img {
 .site-nav a:focus {
   color: var(--accent-text-color);
 }
-
 .contacts {
   font-weight: 500;
   font-size: 14px;
@@ -121,23 +119,6 @@ img {
 .contacts-item:not(:last-child) {
   margin-right: 50px;
 }
-.contacts-icon {
-  display: block;
-  max-width: 100%;
-  margin-right: 10px;
-  height: 16px;
-  fill: currentColor;
-}
-
-.envelope {
-  width: 16px;
-  height: 12px;
-}
-
-.smartphone {
-  width: 10px;
-  height: 16px;
-}
 
 .contacts-link {
   color: var(--secondary-text-color);
@@ -147,8 +128,15 @@ img {
   display: flex;
   align-items: center;
 }
-.contacts-link:hover,
-.contacts-link:focus {
+
+.contacts-icon {
+  max-height: 16px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.contacts a:hover,
+.contacts a:focus {
   color: var(--accent-text-color);
 }
 /*баннер*/
@@ -202,7 +190,7 @@ img {
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/overlay-hero.jpg);
+    url(../images/images-optimisized/jpg/hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -215,8 +203,8 @@ img {
   width: 1px;
   height: 1px;
   margin: -1px;
+  ...;
 }
-
 .benefits {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -257,19 +245,23 @@ img {
 }
 
 .antenna::before {
-  background-image: url(../images/bgi/antenna.svg);
+  background-image: url(../images/images-optimisized/svg/antenna.svg);
+  background-size: 70px;
 }
 
 .clock::before {
-  background-image: url(../images/bgi/clock.svg);
+  background-image: url(../images/images-optimisized/svg/clock.svg);
+  background-size: 70px;
 }
 
 .diagram::before {
-  background-image: url(../images/bgi/diagram.svg);
+  background-image: url(../images/images-optimisized/svg/diagram.svg);
+  background-size: 70px;
 }
 
 .astronaut::before {
-  background-image: url(../images/bgi/astronaut.svg);
+  background-image: url(../images/images-optimisized/svg/astronaut.svg);
+  background-size: 70px;
 }
 
 .benefits-essence {
@@ -356,30 +348,33 @@ img {
 }
 
 .social-link {
-  display: inline-flex;
-  justify-content: center;
+  display: flex;
+}
+
+/*
+.team-social {
+  display: flex;
   align-items: center;
+  justify-content: space-evenly;
+  margin-top: 28px;
+  margin-bottom: 42px;
+}
+.team-social:focus,
+.team-social:hover {
+  background-color: var(--button-bgc);
+}
+
+.social-link {
   width: 44px;
   height: 44px;
-  border-radius: 50%;
-  background-color: var(--main-bgc);
-  color: var(--secondary-text-color);
 }
 
-.social-link-icon {
+.social-icon {
   width: 20px;
   height: 20px;
-  fill: currentColor;
+  color: #afb1b8;
 }
-
-.clients-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.2;
-  text-align: center;
-  letter-spacing: 0.03em;
-  padding-top: 94px;
-}
+*/
 
 .footer {
   background-color: var(--accent-bgc);
@@ -477,13 +472,6 @@ img {
 .portfolio-item {
   margin-right: 30px;
   margin-bottom: 30px;
-  cursor: pointer;
-}
-
-.portfolio-item:hover,
-.portfolio-item:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-item:nth-last-child(-n + 3) {

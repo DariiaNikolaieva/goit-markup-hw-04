@@ -52,6 +52,13 @@ img {
   height: auto;
 }
 
+:active,
+:hover,
+:focus {
+  outline-color: var(--button-bgc);
+  outline-offset: 0;
+}
+
 .help-container {
   border: 2px solid tomato;
 }
@@ -107,6 +114,7 @@ img {
 .site-nav a:hover,
 .site-nav a:focus {
   color: var(--accent-text-color);
+  outline: none;
 }
 .contacts {
   font-weight: 500;
@@ -138,6 +146,7 @@ img {
 .contacts a:hover,
 .contacts a:focus {
   color: var(--accent-text-color);
+  outline: none;
 }
 /*баннер*/
 .hero {
@@ -175,7 +184,7 @@ img {
   display: inline-block;
   border-style: none;
   min-width: 200px;
-  outline: transparent;
+  outline-color: var(--main-bgc);
   cursor: pointer;
 }
 
@@ -377,11 +386,13 @@ img {
 .social-link:focus {
   background-color: var(--button-bgc);
   fill: var(--main-bgc);
+  outline: none;
 }
 
 /*постоянные клиенты*/
 .clients {
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .clients-title {
@@ -397,7 +408,6 @@ img {
   align-items: center;
   justify-content: space-between;
   margin-top: 50px;
-  margin-bottom: 84px;
 }
 
 .clients-link {
@@ -419,6 +429,7 @@ img {
 .clients-link:hover {
   border: 1px solid var(--button-bgc);
   fill: var(--button-bgc);
+  outline: none;
 }
 
 /*футер*/
@@ -427,9 +438,8 @@ img {
   color: var(--bgc-accent-text-color);
   font-size: 14px;
   line-height: 1.7;
-}
-.footer-contacts {
-  margin-top: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-list {
@@ -464,7 +474,7 @@ img {
 }
 
 .footer-join {
-  margin-top: 72px;
+  margin-top: 12px;
   margin-left: 70px;
 }
 .join-title {
@@ -501,6 +511,7 @@ img {
 .join-link:hover,
 .join-link:focus {
   background-color: var(--button-bgc);
+  outline: none;
 }
 
 /*страница портфолио*/
@@ -530,7 +541,7 @@ img {
   background-color: var(--button-bgc);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  outline: transparent;
+  outline: none;
 }
 
 .button-list {
@@ -576,10 +587,15 @@ img {
   margin-right: 0;
 }
 
-.portfolio-item:hover,
-.portfolio-item:focus {
+.porfolio-link {
+  text-decoration: none;
+}
+
+.portfolio-link:hover,
+.portfolio-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+  outline: none;
 }
 
 .card-content {
@@ -597,9 +613,11 @@ img {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  color: var(--main-text-color);
 }
 .filter-type {
   font-size: 16px;
   line-height: 1.9;
   color: var(--secondary-text-color);
+  text-decoration: none;
 }

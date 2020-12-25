@@ -104,6 +104,7 @@ img {
 .site-nav-item:not(:last-child) {
   margin-right: 50px;
 }
+
 .site-nav-link {
   color: var(--main-text-color);
   text-decoration: none;
@@ -444,7 +445,6 @@ img {
 
 .footer-list {
   margin-top: 20px;
-  margin-bottom: 60px;
 }
 .footer-item {
   margin-bottom: 9px;

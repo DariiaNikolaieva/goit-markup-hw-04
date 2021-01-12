@@ -395,7 +395,6 @@ img {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-
 .clients-title {
   font-weight: bold;
   font-size: 36px;
@@ -403,14 +402,12 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
 }
-
 .clients-list {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 50px;
 }
-
 .clients-link {
   display: inline-flex;
   align-items: center;
@@ -421,11 +418,9 @@ img {
   border-radius: 4px;
   fill: #afb1b8;
 }
-
 .clients-icon {
   height: 90px;
 }
-
 .clients-link:focus,
 .clients-link:hover {
   border: 1px solid var(--button-bgc);
